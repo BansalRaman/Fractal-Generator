@@ -1,0 +1,184 @@
+.dropbtn {
+    /* background-color: #04AA6D; */
+    /* color: rgb(210, 79, 79); */
+    border: none;
+    background-image: url('../img/bars_navicon.png');
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height: 40px;
+    cursor: pointer;
+    margin-top: -5vh;
+    margin-right: 1vw;
+  }
+  .fa{
+    margin: 10px;
+    /* background-color: red; */
+  }
+  
+  
+  .dropdown {
+    float: right;
+    position: relative;
+    /* display: inline-block; */
+    /* background-color: aqua; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+  
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  /*   
+  .dropbtn:hover,.fa:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  
+  } */
+  
+  
+  *{
+    margin: 0;
+  
+  }
+  .top{
+  
+    text-align: center;
+  color:white;
+  background-color: RGB(136, 176, 75);
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  
+  }
+  
+  .nitya{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fractal{
+    display: block;
+    width:600px;
+    height: 500px;
+    background-color: aqua;
+    border: 15px solid rgb(96, 173, 68);
+    margin-left:12vw;
+    border-radius: 10px;
+  }
+  
+  .input{
+    width:500px;
+    height: 500px;
+    background-color:whitesmoke;
+    margin-left:10vw;
+  }
+
+  #generate{
+    margin-left: 23vw;
+    margin-top: 6vh;
+    /* width: 9vw;
+    height: 5vh; */
+    font-size: 130%;
+    padding: 8px 8px 8px 8px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
+
+  #generate1{
+    margin-left: 23vw;
+    margin-top: 2vh;
+    /* width: 9vw;
+    height: 5vh; */
+    font-size: 130%;
+    padding: 8px 8px 8px 8px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
+
+  #generate2{
+    margin-left: 22vw;
+    margin-top: 2vh;
+    /* width: 9vw;
+    height: 5vh; */
+    font-size: 130%;
+    padding: 8px 8px 8px 8px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
+
+  .check{
+
+    margin-top: 20vh;
+    margin-left: 20vw;
+    font-size: 130%;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  canvas{
+    
+    float: right;
+    margin-right: 27vw;
+    margin-top: -41vh;
+    width: 350%;
+    height: 60%;
+
+  }
+  .dropbtn:hover{
+    transform: scale(1.05);
+  }
+  #generate:hover{
+    transform: scale(1.05);
+  }
+  #generate1:hover{
+    transform: scale(1.05);
+  }
+  #hei{
+
+    margin-left: -1vw;
+
+  }
+  .gap{
+    margin-left: 5vw;
+  }
+  @media screen and (max-width: 640px) {
+    .p5Canvas{
+      margin-top: 15vh !important;
+      width:60% !important;
+      height:60% !important;
+    }
+  }
+  @media screen and (max-width: 768px) and (min-width:641px) {
+    .p5Canvas{
+      margin-top: 15vh !important;
+      width:60% !important;
+      height:60% !important;
+    }
+  }

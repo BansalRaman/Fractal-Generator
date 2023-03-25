@@ -1,0 +1,329 @@
+.dropbtn {
+  /* background-color: #04AA6D; */
+  /* color: rgb(210, 79, 79); */
+  border: none;
+  background-image: url('../img/bars_navicon.png');
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  cursor: pointer;
+  margin-top: -5vh;
+  margin-right: 1vw;
+}
+.dropbtn:hover{
+  transform: scale(1.05);
+}
+.fa{
+  margin: 10px;
+  /* background-color: red; */
+}
+.dropdown {
+  float: right;
+  position: relative;
+  /* display: inline-block; */
+  /* background-color: aqua; */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/*   
+.dropbtn:hover,.fa:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+
+} */
+
+
+*{
+  margin: 0;
+
+}
+.top{
+
+  text-align: center;
+  color:white;
+  background-color: RGB(136, 176, 75);
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+
+}
+
+.club {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 90rem;
+  margin-top: 11vh;
+}
+
+.clubsBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.clubcard {
+  width: calc(28% - 0.2rem);
+  /*     margin: 30px 40px; */
+  cursor: pointer;
+  padding: 50px 40px;
+}
+
+.clubinfo {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.clubfront,
+.clubback {
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  /*     min-height: 300px; */
+  height: 360px;
+  color: #fff;
+  /*     font-size: 1rem; */
+}
+
+.clubback {
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg, #00cdac 0%, #8ddad5 100%);
+  background: -o-linear-gradient(45deg, #00cdac 0%, #8ddad5 100%);
+  background: linear-gradient(45deg, #00cdac 0%, #8ddad5 100%);
+}
+
+.clubfront:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.01;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.clubinfo:hover .clubfront,
+.clubinfo:hover .clubback {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.clubback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.clubinner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  text-align: justify;
+  margin-bottom: 2vh;
+}
+
+.clubinfo .clubback {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.clubinfo .clubfront {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.clubinfo:hover .clubback {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.clubinfo:hover .clubfront {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.clubinner p {
+  font-size: 1rem;
+      margin-bottom: 0px;
+  position: relative;
+  padding: 0px 30px;
+}
+
+.clubfront .clubinner p:after {
+  content: "";
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #fafbfc;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
+}
+.clubinner h2 {
+  color: black;
+  font-size: 30px;;
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.fab {
+  color:black;
+  font-size:30px;
+  padding:5px 20px;
+}
+
+.fab:hover{
+  transform:scale(1.1);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .clubcard {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .clubcard {
+    width: calc(50% - 1rem);
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .clubcard {
+    width: calc(70% - -1rem);
+   
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clubcard {
+    width: calc(50% - -10rem);
+    margin: 0 0 2rem 0;
+    padding: 5px 10px;
+  }
+  .clubinner p {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .clubcard {
+    width: 100%;
+    margin: 0 0 0rem 0;
+    padding: 5px 10px;
+  }
+  .clubfront{
+    height: 340px;
+  }
+  .clubback{
+    height: 340px;
+  }
+}
+
+/* Custom Scrollbar */
+
+.scrollable{
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.dont{
+  text-align: center;
+}
+.dont a{
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px solid;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  color:white;
+  background-color: rgb(119, 194, 7);
+}
+.dont a:hover{
+  background-color: green;
+  color: white;
+}

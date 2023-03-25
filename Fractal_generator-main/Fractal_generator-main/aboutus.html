@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/About.css">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="top">
+        <div class="heading">
+            <h1>
+                About Us &nbsp; &nbsp;&nbsp;
+            </h1>
+        </div>
+        <!-- navbar -->
+        <div class="dropdown">
+            <div onclick="myFunction()" class="dropbtn">
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contactus.html">Contact Us</a>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++){
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
+    <div class="container2">
+        <div class="com-member">
+            <div class="picture">
+                <img class="img-fluid" src="img/ashu.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="name">Ashutosh Kumar Singh</h3>
+            </div>
+            <!--Social links-->
+            <ul class="social">
+                <li><a href="mailto:ashutosh_2101cs12@iitp.ac.in" class="fa fa-envelope" aria-hidden="true"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/ashutosh-singh-iitp/" target="_balnk"
+                        class="fa fa-linkedin" aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="com-member">
+            <div class="picture">
+                <img class="img-fluid" src="img/nitya.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="name">Nityanand Kumar</h3>
+            </div>
+            <!--Social links-->
+            <ul class="social">
+                <li><a href="mailto:nityanand_2101cs54@iitp.ac.in" class="fa fa-envelope" aria-hidden="true"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/mwlite/in/nityanand-kumar-453133243" target="_blank"
+                        class="fa fa-linkedin" aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="com-member">
+            <div class="picture">
+                <img class="img-fluid" src="img/raman.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="name">Raman Bansal</h3>
+            </div>
+            <!--Social links-->
+            <ul class="social">
+                <li><a href="mailto:raman_2101cs64@iitp.ac.in" class="fa fa-envelope" aria-hidden="true"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/raman-bansal-619456227/" target="_blank" class="fa fa-linkedin"
+                        aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="container2"></div>
+        <div class="com-member">
+            <div class="picture">
+                <img class="img-fluid" src="img/hiren.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="name">Hiren Achhada</h3>
+            </div>
+            <!--Social links-->
+            <ul class="social">
+                <li><a href="mailto:achhada_2101cs03@iitp.ac.in" class="fa fa-envelope" aria-hidden="true"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/hiren-achhada-5aa214210/" target="_blank" class="fa fa-linkedin"
+                        aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="com-member">
+            <div class="picture">
+                <img class="img-fluid" src="img/pradeep.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="name">Pradeep</h3>
+            </div>
+            <!--Social links-->
+            <ul class="social">
+                <li><a href="mailto:pradeep_2101cs59@iitp.ac.in" class="fa fa-envelope" aria-hidden="true"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/pradeep-kumar-25ba7522b/" target="_blank"
+                        class="fa fa-linkedin" aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

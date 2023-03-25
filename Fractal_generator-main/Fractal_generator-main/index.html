@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- menubar  -->
+    <div class="top">
+        <div class="heading">
+            <h1>
+                Fractal Generator &nbsp; &nbsp;&nbsp;
+            </h1>
+        </div>
+
+        <div class="dropdown">
+            <div onclick="myFunction()" class="dropbtn">
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contactus.html">Contact Us</a>
+            </div>
+        </div>
+
+         <!-- javascript code for dropdown menu to work -->
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++){
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
+
+    <!-- cards fro each fractal  -->
+    <section> 
+
+      <!-- fractal tree -->
+        <div class="club">
+          <div class="clubsBody">
+            <div class="clubcard" ontouchstart="this.classList.toggle('hover');">
+              <div class="clubinfo">
+                <div class="clubfront" style=" background-image: url(img/Fractaltree.png)">
+                </div>
+                <div class="clubback">
+                  <div class="clubinner">
+                    <h2>Fractal Tree</h2>
+                    <br>
+                    <div class="scrollable">
+                      <p>
+                        Each branch of the fractal tree is a replica of the base of the tree. Also, fractal trees are symmetrical.
+                        <br><br>
+                        <div class="dont">
+                          <a href="fractal/tree.html">Generate</a>
+                        </div>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- newton fractal -->
+            <div class="clubcard" ontouchstart="this.classList.toggle('hover');">
+              <div class="clubinfo">
+                <div class="clubfront" style=" background-image: url(img/Newton.png)">
+                </div>
+                <div class="clubback">
+                  <div class="clubinner">
+                    <h2>Newton Fractal</h2>
+                    <br>
+                    <div class="scrollable">
+                      <p>
+                        Newton’s Fractal is started at each point on a grid in the complex plane, and a color is assigned to each point according to which of the roots of a given function the iteration converges to.
+                        <br><br>
+                        <div class="dont">
+                          <a href="fractal/newton.html">Generate</a>
+                        </div>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- mandelbrot frcatal -->
+            <div class="clubcard" ontouchstart="this.classList.toggle('hover');">
+              <div class="clubinfo">
+                <div class="clubfront" style=" background-image: url(img/Mandelbrot.png)">
+                </div>
+                <div class="clubback">
+                  <div class="clubinner">
+                    <h2>Mandelbrot Fractal</h2>
+                    <br>
+                    <div class="scrollable">
+                      <p>
+                        The Mandelbrot Fractal consists of all of those (complex) c-values for which the corresponding orbit of 0 under x<sup>2</sup> + c does not escape to infinity.
+                        <br><br>
+                        <div class="dont">
+                          <a href="fractal/mandelbrot.html">Generate</a>
+                        </div>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Julia fractal -->
+            <div class="clubcard" ontouchstart="this.classList.toggle('hover');">
+              <div class="clubinfo">
+                <div class="clubfront" style=" background-image: url(img/julia.png)">
+                </div>
+                <div class="clubback">
+                  <div class="clubinner">
+                    <h2>Julia Fractal</h2>
+                    <br>
+                    <div class="scrollable">
+                      <p>
+                        The Julia Fractal is associated with those points z = x + iy on the complex plane for which the series Z<sub>n+1</sub> = Z<sub>n</sub><sup>2</sup> + c does not tend to infinity.
+                        <br><br>
+                        <div class="dont">
+                          <a href="fractal/julia.html">Generate</a>
+                        </div>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- random frcatal -->
+            <div class="clubcard" ontouchstart="this.classList.toggle('hover');">
+              <div class="clubinfo">
+                <div class="clubfront" style=" background-image: url(img/Random.png)">
+                </div>
+                <div class="clubback">
+                  <div class="clubinner">
+                    <h2>Random Fractal</h2>
+                    <br>
+                    <div class="scrollable">
+                      <p>
+                        Random Fractal grow stochastically with the probability that is closely related to the solution of Laplace equation. It is found that the random growth with screening effect makes the pattern fractal.
+                        <br><br>
+                        <div class="dont">
+                          <a href="fractal/random.html">Generate</a>
+                        </div>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

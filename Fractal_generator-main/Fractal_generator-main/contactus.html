@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="top">
+        <div class="heading">
+            <h1>
+                Contact Us &nbsp; &nbsp;&nbsp;
+            </h1>
+        </div>
+        <!-- toolbar -->
+
+        <div class="dropdown">
+            <div onclick="myFunction()" class="dropbtn">
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contactus.html">Contact Us</a>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++){
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
+    <div class="raman1">
+        <h1>Email id : achhadahiren201@gmail.com </h1>
+    </div>
+    <div class="raman1">
+        <h1>Email id : ramanbansal278@gmail.com </h1>
+    </div>
+    <!-- <div class="raman" > 
+        <h1>Contact No. :  +91-XXXXXXXXXX </h1>
+    </div> -->
+    
+</body>
+</html>

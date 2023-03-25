@@ -1,0 +1,82 @@
+.dropbtn {
+  /* background-color: #04AA6D; */
+  /* color: rgb(210, 79, 79); */
+  border: none;
+  background-image: url('../img/bars_navicon.png');
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  height: 40px;
+  cursor: pointer;
+  margin-top: -5vh;
+  margin-right: 1vw;
+}
+.fa{
+  margin: 10px;
+  /* background-color: red; */
+}
+  
+  
+.dropdown {
+  float: right;
+  position: relative;
+  /* display: inline-block; */
+  /* background-color: aqua; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/*   
+.dropbtn:hover,.fa:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+
+} */
+
+
+*{
+  margin: 0;
+
+}
+.top{
+
+  text-align: center;
+  color:white;
+  background-color: RGB(136, 176, 75);
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+.raman{
+  text-align: center;
+  margin-top: 10vh;
+  font-family:'Times New Roman', Times, serif;
+}
+.raman1{
+  text-align: center;
+  margin-top: 25vh;
+  font-family:'Times New Roman', Times, serif;
+}
+.dropbtn:hover{
+  transform: scale(1.05);
+}
